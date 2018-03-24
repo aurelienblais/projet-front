@@ -11,5 +11,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   target-branch: gh-pages
+  local-dir: dist
   on:
     branch: master
