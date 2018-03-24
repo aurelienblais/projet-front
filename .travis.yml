@@ -4,7 +4,7 @@ node_js:
 before_script:
    - npm install -g @angular/cli
 script:
-   - ng build --prod
+   - ng build --prod --bh /projet-front/
 deploy:
   provider: pages
   skip-cleanup: true
