@@ -30,7 +30,7 @@ export class MapComponent implements OnInit {
     new google.maps.Marker({
       position: coordinates,
       map: this.map
-    };
+    )};
   }
 
 }
