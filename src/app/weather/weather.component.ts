@@ -33,6 +33,7 @@ export class WeatherComponent implements OnInit {
   }
 
   updateTown(id): void {
+    this.town = undefined;
     this.townService.getTown(id)
       .subscribe(e => {
         this.town = new Town(

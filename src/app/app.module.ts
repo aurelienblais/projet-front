@@ -8,13 +8,15 @@ import {HttpClientModule} from '@angular/common/http';
 
 import {TownService} from "./services/town/town.service";
 import { MapComponent } from './map/map.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    MapComponent
+    MapComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
