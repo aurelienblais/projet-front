@@ -1,7 +1,7 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {Town} from 'app/classes/town';
 import {TownService} from "../services/town/town.service";
-import {Weather} from "../classes/weather";
+import {Forecast} from "../classes/forecast";
 import {MapComponent} from "../map/map.component";
 
 @Component({
@@ -40,7 +40,7 @@ export class WeatherComponent implements OnInit {
           e.name,
           e.latitude,
           e.longitude,
-          new Weather(
+          new Forecast(
             e.forecast.summary,
             e.forecast.icon,
             e.forecast.temperature

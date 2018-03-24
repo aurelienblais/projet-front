@@ -1,4 +1,5 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
+import {} from '@types/googlemaps';
 
 @Component({
   selector: 'app-map',
@@ -30,7 +31,7 @@ export class MapComponent implements OnInit {
     new google.maps.Marker({
       position: coordinates,
       map: this.map
-    )};
+    });
   }
 
 }

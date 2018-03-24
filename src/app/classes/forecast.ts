@@ -1,8 +1,8 @@
-export class Weather {
+export class Forecast {
   constructor(
     public summary: string,
     public icon: string,
-    public temp: number
+    public temperature: number
   ) {};
 
 }

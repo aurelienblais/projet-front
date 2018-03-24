@@ -10,12 +10,12 @@
         <h5>Météo - {{ town.name }}</h5>
       </div>
       <div class="col-sm-2">
-       <i class="wi wi-fw wi-forecast-io-{{ town.weather.icon }}"></i>
+       <i class="wi wi-fw wi-forecast-io-{{ town.forecast.icon }}"></i>
       </div>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Température : {{ town.weather.temp }}°C</li>
-      <li class="list-group-item">Temps : {{ town.weather.summary }}</li>
+      <li class="list-group-item">Température : {{ town.forecast.temperature }}°C</li>
+      <li class="list-group-item">Temps : {{ town.forecast.summary }}</li>
     </ul>
     <div class="card-img-bottom">
       <app-map #weatherMap lat="{{town.latitude}}" lng="{{town.longitude}}"></app-map>
