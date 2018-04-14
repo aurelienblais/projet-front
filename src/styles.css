@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+  border-radius: 0 !important;
+}
+
+.card {
+  box-shadow: #333333 5px 5px 10px ;
+}
